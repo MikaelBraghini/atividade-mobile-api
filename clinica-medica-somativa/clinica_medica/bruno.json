@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "clinica_medica",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

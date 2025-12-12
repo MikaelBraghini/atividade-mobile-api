@@ -1,0 +1,30 @@
+meta {
+  name: PostMedico
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{endereco_root}}/pacientes
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cpf": "12345678902",
+    "nome": "Maria Oliveira",
+    "email": "maria.oliveiraa@exemplo.com",
+    "telefone": "11999887766",
+    "endereco": {
+      "logradouro": "Avenida Paulista",
+      "bairro": "Bela Vista",
+      "cep": "01311000",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "numero": "1500",
+      "complemento": "Bloco A, apto 42"
+    }
+  }
+  
+}

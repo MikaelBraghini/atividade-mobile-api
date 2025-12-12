@@ -1,0 +1,31 @@
+meta {
+  name: PostMedico
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{endereco_root}}/medicos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nome": "João da Silva",
+    "email": "joao.silvaa@medpro.com",
+    "telefone": "11987654321",
+    "crm": "654231",
+    "especialidade": "CARDIOLOGIA",
+    "endereco": {
+      "logradouro": "Rua das Flores",
+      "bairro": "Centro",
+      "cep": "12345678",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "numero": "100",
+      "complemento": "Apartamento 12"
+    }
+  }
+  
+}

@@ -1,0 +1,18 @@
+meta {
+  name: DeleteCancelamentoConsulta
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{endereco_root}}/consultas/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "motivoCancelamento": "Paciente não pode comparecer"
+  }
+  
+}

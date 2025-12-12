@@ -1,0 +1,30 @@
+meta {
+  name: PutPacienteError
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{endereco_root}}/pacientes
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 1,
+    "nome": "Maria Atualizadaa",
+    "telefone": "11999990002",
+    "email": "maria.oliveiraa@exemplo.com",
+    "endereco": {
+      "logradouro": "Rua Nova",
+      "bairro": "Centro",
+      "cep": "01111000",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "numero": "10",
+      "complemento": "Fundos"
+    }
+  }
+  
+}

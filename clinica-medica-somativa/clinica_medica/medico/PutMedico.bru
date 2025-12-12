@@ -1,0 +1,29 @@
+meta {
+  name: PutMedico
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{endereco_root}}/medicos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 1,
+    "nome": "João Atualizado",
+    "telefone": "11988887777",
+    "endereco": {
+      "logradouro": "Rua Atualizada",
+      "bairro": "Zona Sul",
+      "cep": "02020200",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "numero": "200",
+      "complemento": "Casa"
+    }
+  }
+  
+}
